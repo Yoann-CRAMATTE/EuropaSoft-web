@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 48" width="228" height="48"
+     role="img" aria-labelledby="es-logo-title" fill="currentColor">
+  <title id="es-logo-title">EuropaSoft</title>
+  <!-- Monogramme : « E » d'imprimeur, trois lignes de texte et le point final -->
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="none" stroke="currentColor" stroke-width="3"/>
+  <rect x="13" y="13" width="20" height="4" rx="1"/>
+  <rect x="13" y="22" width="14" height="4" rx="1"/>
+  <rect x="13" y="31" width="20" height="4" rx="1"/>
+  <circle cx="34" cy="24" r="2.6"/>
+  <!-- Mot-symbole (à vectoriser avant diffusion définitive, cf. docs/IDENTITE.md) -->
+  <text x="58" y="34" font-family="Newsreader, Georgia, serif" font-size="27" font-weight="600" letter-spacing="-0.4">Europa<tspan font-style="italic" font-weight="500">Soft</tspan></text>
+</svg>

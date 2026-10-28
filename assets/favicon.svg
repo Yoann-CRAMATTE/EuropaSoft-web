@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .tile { fill: #1D3A6B; } .mark { fill: #F6F3EC; }
+    @media (prefers-color-scheme: dark) { .tile { fill: #93B2E6; } .mark { fill: #11141A; } }
+  </style>
+  <rect class="tile" width="32" height="32" rx="7"/>
+  <rect class="mark" x="8" y="8" width="13" height="3.2" rx="0.8"/>
+  <rect class="mark" x="8" y="14.4" width="9" height="3.2" rx="0.8"/>
+  <rect class="mark" x="8" y="20.8" width="13" height="3.2" rx="0.8"/>
+  <circle class="mark" cx="23.6" cy="16" r="2"/>
+</svg>

@@ -1,0 +1,5 @@
+# EuropaSoft — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://europasoft.fr/sitemap.xml

@@ -1,0 +1,42 @@
+{
+  "name": "EuropaSoft — Site web",
+  "version": "0.1.3",
+  "company": "EuropaSoft",
+  "developer": "Yoann CRAMATTE",
+  "website": "https://europasoft.fr",
+  "contact": "contact@europasoft.fr",
+  "copyright": "© 2026 EuropaSoft. Tous droits réservés.",
+  "description": "Site vitrine de l'entreprise EuropaSoft : présentation, applications, à propos, contact et mentions légales. HTML/CSS/JS statique, sans build.",
+  "changelog": [
+    {
+      "version": "0.1.3",
+      "date": "2026-10-28",
+      "changes": [
+        "Publication sur GitHub Pages via un dépôt public séparé (EuropaSoft-web) et le script scripts/publier-pages.sh",
+        "Manifeste web : chemins relatifs, valables à la racine comme dans un sous-dossier"
+      ]
+    },
+    {
+      "version": "0.1.2",
+      "date": "2026-10-26",
+      "changes": [
+        "Mentions légales : adresse du siège (Réchésy) et hébergeur OVH renseignés, lignes capital et téléphone retirées",
+        "À propos et JSON-LD : année de fondation 2026 et adresse postale"
+      ]
+    },
+    {
+      "version": "0.1.1",
+      "date": "2026-10-26",
+      "changes": [
+        "Accessibilité : débordement horizontal corrigé sur la page Produits (grille en minmax, espacement de texte WCAG 1.4.12), case de consentement portée à 24 px, pastille « ! » des erreurs masquée aux lecteurs d’écran, repères d’état rétablis en mode couleurs forcées (FAQ, page courante)"
+      ]
+    },
+    {
+      "version": "0.1.0",
+      "date": "2026-10-26",
+      "changes": [
+        "Création du projet : identité, contenus et première version des pages Accueil, Produits, À propos, Contact et Mentions légales"
+      ]
+    }
+  ]
+}

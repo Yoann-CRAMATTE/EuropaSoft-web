@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Écrire à l’équipe EuropaSoft</title>
+<meta name="description" content="Une question sur Clio, Europa Office ou nos autres logiciels ? Écrivez à EuropaSoft via ce formulaire ou à contact@europasoft.fr.">
+<link rel="canonical" href="https://europasoft.fr/contact.html">
+<meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11141A" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EuropaSoft">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Contact — Écrire à l’équipe EuropaSoft">
+<meta property="og:description" content="Une question sur Clio, Europa Office ou nos autres logiciels ? Écrivez à EuropaSoft via ce formulaire ou à contact@europasoft.fr.">
+<meta property="og:url" content="https://europasoft.fr/contact.html">
+<!-- [À COMPLÉTER : og:image 1200 × 630 en PNG ou JPEG (le SVG n’est pas lu par les réseaux sociaux)] -->
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/newsreader-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="js/appinfo.js" defer></script>
+<script src="js/main.js" defer></script>
+</head><body>
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="EuropaSoft, retour à l’accueil"><svg viewBox="0 0 228 48" width="228" height="48" aria-hidden="true" focusable="false" fill="currentColor"><rect x="2" y="2" width="44" height="44" rx="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="13" width="20" height="4" rx="1"/><rect x="13" y="22" width="14" height="4" rx="1"/><rect x="13" y="31" width="20" height="4" rx="1"/><circle cx="34" cy="24" r="2.6"/><text x="58" y="34" font-family="Newsreader, Georgia, serif" font-size="27" font-weight="600" letter-spacing="-0.4">Europa<tspan font-style="italic" font-weight="500">Soft</tspan></text></svg></a>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg><span aria-hidden="true">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a class="btn btn--primary btn--small" href="produits.html">Découvrir nos logiciels</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+
+<section class="page-hero" aria-labelledby="page-titre">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1 id="page-titre">Contactez EuropaSoft</h1>
+    <p class="lead">Question sur un logiciel, problème technique, suggestion ou demande professionnelle : écrivez-nous. Chaque message est lu et reçoit une réponse personnelle.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+
+    <section class="form-card" aria-labelledby="form-titre">
+      <h2 id="form-titre">Envoyer un message</h2>
+      <p>Les champs marqués d’un astérisque (*) sont obligatoires.</p>
+
+      <!--
+        BRANCHEMENT D'UN SERVICE D'ENVOI — à choisir par Yoann.
+        Aucun serveur n'est relié pour l'instant : le formulaire ouvre le logiciel
+        de messagerie du visiteur (action mailto: vers l'adresse d'AppInfo.json).
+        Pour brancher un service (formulaire hébergé dans l'UE, fonction serveur
+        de l'hébergeur…), renseigner son URL dans l'attribut data-endpoint
+        ci-dessous : js/main.js enverra alors les données en POST (FormData)
+        et affichera les messages de succès ou d'erreur prévus plus bas.
+        Pour le repli sans JavaScript, remplacer aussi action, method et enctype.
+        Mettre à jour ensuite la politique de confidentialité (destinataires).
+      -->
+      <form class="form" action="mailto:contact@europasoft.fr" method="post" enctype="text/plain"
+            data-contact-form data-appinfo-action="contact" data-endpoint="">
+
+        <div class="form-alert form-alert--error" data-form-summary tabindex="-1" hidden>
+          <p>Certains champs sont à compléter ou à corriger. Vérifiez les éléments signalés ci-dessous.</p>
+          <ul></ul>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="nom">Votre nom <span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="nom" name="nom" type="text" autocomplete="name" required
+                   placeholder="Ex.&nbsp;: Marie Dupont" aria-describedby="nom-error"
+                   data-error="Merci d’indiquer votre nom.">
+            <p class="field__error" id="nom-error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Votre adresse e-mail <span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required
+                   placeholder="Ex.&nbsp;: marie.dupont@exemple.fr" aria-describedby="email-hint email-error"
+                   data-error="Merci d’indiquer une adresse e-mail valide (ex.&nbsp;: nom@exemple.fr).">
+            <p class="field__hint" id="email-hint">Nous l’utilisons uniquement pour vous répondre.</p>
+            <p class="field__error" id="email-error"></p>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="objet">Objet de votre message <span class="req" aria-hidden="true">*</span></label>
+            <select class="select" id="objet" name="objet" required aria-describedby="objet-error"
+                    data-error="Merci de choisir l’objet de votre message.">
+              <option value="" selected>Choisissez un objet</option>
+              <option>Question sur un logiciel</option>
+              <option>Problème technique</option>
+              <option>Suggestion ou idée d’amélioration</option>
+              <option>Demande professionnelle ou partenariat</option>
+              <option>Presse</option>
+              <option>Autre</option>
+            </select>
+            <p class="field__error" id="objet-error"></p>
+          </div>
+          <div class="field">
+            <label for="logiciel">Logiciel concerné</label>
+            <select class="select" id="logiciel" name="logiciel" aria-describedby="logiciel-hint">
+              <option value="">Aucun en particulier</option>
+              <option>Clio</option>
+              <option>EuropaSoft Office</option>
+              <option>Calliope</option>
+              <option>Oralia</option>
+              <option>Morphée</option>
+              <option>Groma</option>
+            </select>
+            <p class="field__hint" id="logiciel-hint">Facultatif, mais utile pour vous répondre plus vite.</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Votre message <span class="req" aria-hidden="true">*</span></label>
+          <textarea class="textarea" id="message" name="message" rows="7" required minlength="20" data-minlength="20"
+                    placeholder="Décrivez votre question ou votre besoin…" aria-describedby="message-hint message-error"
+                    data-error="Merci d’écrire votre message (20 caractères minimum)."></textarea>
+          <p class="field__hint" id="message-hint">Pour un problème technique, précisez votre appareil, votre système et la version du logiciel.</p>
+          <p class="field__error" id="message-error"></p>
+        </div>
+
+        <div class="field check">
+          <input id="consentement" name="consentement" type="checkbox" value="oui" required aria-describedby="consentement-error"
+                 data-error="Merci de cocher cette case pour que nous puissions vous répondre.">
+          <label for="consentement">J’accepte que mes informations soient utilisées pour répondre à ma demande. <span class="req" aria-hidden="true">*</span></label>
+          <p class="field__error" id="consentement-error"></p>
+        </div>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit" data-sending="Envoi en cours…">Envoyer le message</button>
+        </div>
+      </form>
+
+      <!-- Texte provisoire (mode mailto:, sans service d'envoi) : à valider par Yoann. -->
+      <div class="form-alert form-alert--info" data-form-status="mailto" tabindex="-1" role="status" hidden>
+        <p><strong>Votre logiciel de messagerie va s’ouvrir.</strong> Votre message y est prérempli : il ne vous reste qu’à l’envoyer. Si rien ne s’ouvre, écrivez-nous directement à <a href="mailto:contact@europasoft.fr" data-appinfo="contact">contact@europasoft.fr</a>.</p>
+      </div>
+      <div class="form-alert form-alert--success" data-form-status="success" tabindex="-1" role="status" hidden>
+        <p><strong>Merci, votre message est bien parti.</strong> Nous vous répondrons à l’adresse indiquée sous <span class="a-completer">[À COMPLÉTER : délai, ex. « 2 jours ouvrés »]</span>. Pensez à vérifier votre dossier de courriers indésirables.</p>
+      </div>
+      <div class="form-alert form-alert--error" data-form-status="error" tabindex="-1" role="alert" hidden>
+        <p><strong>Votre message n’a pas pu être envoyé.</strong> Un problème technique est survenu. Votre texte n’a pas été effacé : réessayez dans quelques instants, ou écrivez-nous directement à <a href="mailto:contact@europasoft.fr" data-appinfo="contact">contact@europasoft.fr</a>.</p>
+      </div>
+
+      <p class="rgpd" id="rgpd">Les informations saisies sont utilisées par EuropaSoft uniquement pour répondre à votre demande. Elles ne sont ni vendues, ni cédées, ni utilisées à des fins publicitaires, et sont conservées <span class="a-completer">[À COMPLÉTER : durée, ex. « 3 ans à compter de notre dernier échange »]</span>. Vous pouvez accéder à vos données, les rectifier ou en demander l’effacement en écrivant à <a href="mailto:contact@europasoft.fr" data-appinfo="contact">contact@europasoft.fr</a>. En savoir plus : <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a>.</p>
+    </section>
+
+    <aside class="contact-aside" aria-labelledby="autres-titre">
+      <h2 id="autres-titre">Autres moyens de nous joindre</h2>
+      <div class="aside-block">
+        <h3>Par e-mail</h3>
+        <a class="aside-mail" href="mailto:contact@europasoft.fr" data-appinfo="contact">contact@europasoft.fr</a>
+      </div>
+      <div class="aside-block">
+        <h3>Délai de réponse</h3>
+        <p>Nous répondons généralement sous <span class="a-completer">[À COMPLÉTER : délai]</span>, du lundi au vendredi.</p>
+      </div>
+      <div class="aside-block">
+        <h3>Avant d’écrire</h3>
+        <p>Votre question porte peut-être sur le fonctionnement hors ligne, les appareils compatibles ou les tarifs : consultez la <a href="index.html#faq">foire aux questions de l’accueil</a> et la <a href="produits.html">page Produits</a>.</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="monogram" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="currentColor"><rect x="2" y="2" width="44" height="44" rx="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="13" width="20" height="4" rx="1"/><rect x="13" y="22" width="14" height="4" rx="1"/><rect x="13" y="31" width="20" height="4" rx="1"/><circle cx="34" cy="24" r="2.6"/></svg>
+        <p class="footer-brand__name">Europa<em>Soft</em></p>
+        <p>Des logiciels européens, légers et sobres, qui travaillent pour vous et gardent vos données chez vous.</p>
+      </div>
+      <nav aria-labelledby="f-logiciels">
+        <h2 class="footer-title" id="f-logiciels">Logiciels</h2>
+        <ul class="footer-list">
+            <li><a href="produits.html#clio">Clio</a></li>
+            <li><a href="produits.html#europa-office">EuropaSoft Office</a></li>
+            <li><a href="produits.html#calliope">Calliope</a></li>
+            <li><a href="produits.html#oralia">Oralia</a></li>
+            <li><a href="produits.html#morphee">Morphée</a></li>
+            <li><a href="produits.html#groma">Groma</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-societe">
+        <h2 class="footer-title" id="f-societe">EuropaSoft</h2>
+        <ul class="footer-list">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-title">Nous écrire</h2>
+        <p><a href="mailto:contact@europasoft.fr" data-appinfo="contact">contact@europasoft.fr</a></p>
+        <p>Réponse sous <span class="a-completer">[À COMPLÉTER : délai de réponse habituel, ex. « 2 jours ouvrés »]</span>.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span data-appinfo="copyright">© 2026 EuropaSoft. Tous droits réservés.</span> Conçu en France par <span data-appinfo="developer">Yoann CRAMATTE</span>.</p>
+      <p>Ce site n’utilise ni cookie de suivi ni outil d’analyse d’audience.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
